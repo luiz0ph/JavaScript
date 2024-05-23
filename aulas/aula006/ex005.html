@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <style>
+        body {
+            background-color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        const corpo = window.document.body;
+        // const mensagem = window.document.getElementById('msg');
+        const mensagem = window.document.querySelector('div#msg');
+        corpo.style.background = 'pink';
+
+        /* const mensagem = window.document.getElementsByName('msg')[0];
+        mensagem.style.color = pink */
+
+
+        mensagem.style.background = '#00ff00';
+        mensagem.style.padding = '10px';
+        mensagem.style.margin = '20px 0';
+        mensagem.style.textAlign = 'center';
+
+        // mensagem.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Estou aguardando...'
+
+        var p1 = document.getElementsByTagName('p')[1]; // o [0] seleciona o primeiro parágrafo
+
+        document.write('Está escrito assim: ' + p1.innerHTML) // o .innerText ele mostra o texto do parágrafo
+
+        // .innerText copia o texto sem a formatção, já o inner.HTML copia com a formatção
+
+        p1.style.color = '#0000ff' // p1 > style > color = azul
+    </script>
+</body>
+</html>
