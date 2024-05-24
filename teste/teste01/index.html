@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teste</title>
+</head>
+<body class="container">
+    <h1>Escolha dois numeros Inteiros</h1>
+
+    <input 
+    type="number"
+    id="num1"
+    >
+
+    <select name="." id="operador">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="%">resto de divisão</option>
+        <option value="*">Elevado</option>
+    </select>
+
+    <input 
+    type="number"
+    id="num2">
+
+    <div id="mostrar">
+        <p id="resultado"></p>   <span id="valor"></span>
+    </div>
+
+    <button onclick="Calculadora()">
+        mostrar
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
