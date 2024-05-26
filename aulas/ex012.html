@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        body {
+            background-color: #c3c3c3;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 100px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            box-shadow: 1px 1px 8px #00000070;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            border: none;
+            box-shadow: 1px 1px 8px #00000070;
+        }
+    </style>
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <input 
+    type="text" 
+    name="nacionalidade" 
+    id="nacionalidade"
+    placeholder="Seu país de origem">
+
+    <button onclick="MostrarOrigem()">
+        Enviar
+    </button>
+
+    <div id="resultado">
+
+    </div>
+
+    <script>
+        function MostrarOrigem() {
+            let nacionalidade = document.getElementById('nacionalidade').value;
+            let res = document.querySelector('div#resultado');
+
+            nacionalidade = nacionalidade.toLowerCase(); // Transforma em letra minuscula
+
+            mostrar = nacionalidade.charAt(0).toUpperCase() + nacionalidade.slice(1); // Transforma só a primeira letra em Maiuscula
+
+            res.innerHTML = `<p>Sua país de origem é <strong>${mostrar}</strong></p>`;
+            if (nacionalidade != 'brasil') {
+                res.innerHTML += `<p>Você é estrangeiro</p>`;
+            } else {
+                res.innerHTML += `<p>Você é Brasileiro</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
