@@ -61,7 +61,7 @@ function carregar() {
         document.body.style.backgroundColor = '#A37862';
         img.src = 'img/img_tarde.jpg';
         saud.innerHTML = 'Boa Tarde';
-    } else {
+    } else { // Caso esteja de noite
         document.body.style.backgroundColor = '#454847';
         img.src = 'img/img_noite.jpg';
         saud.innerHTML = 'Boa noite';

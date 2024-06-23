@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <!-- Entrada dos dados -->
+        <section id="entrada">
+            <div id="ano_nascimento">
+                <!-- Ano de nascimento -->
+                <label for="ano"><strong id="etiqueta_ano">Ano de Nascimento: </strong> <br>
+                    <input
+                    type="number"
+                    name="ano"
+                    id="ano"
+                    placeholder="Ano de nascimento"
+                    min="1900"
+                    max="2025">
+                </label>
+            </div>
+
+            <div id="sexo">
+                <!-- Sexo da pessoa -->
+                <strong>Sexo:</strong><br>
+                <input
+                    type="radio"
+                    value="m"
+                    name="sexo"
+                    id="sexo_m"
+                    checked>
+                <label for="sexo_m">Masculino</label>
+                <input
+                    type="radio"
+                    value="f"
+                    name="sexo"
+                    id="sexo_f">
+                <label for="sexo_f">Feminino</label>
+            </div>
+
+            <div id="btn">
+                <button id="btn_enviar" onclick="verificarIdade()">
+                    Verificar
+                </button>
+            </div>
+        </section>
+
+        <!-- Saida dos dados -->
+        <section id="saida">
+            
+            <img src="" alt="" id="foto">
+            
+            <p id="res">Preencha os dados acima para ver o resultado !</p>
+        </section>
+    </main>
+    <footer>
+        <p id="copy">&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

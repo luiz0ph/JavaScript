@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Passos</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <!-- Entrada dos dados -->
+        <section id="entrada">
+            <div id="area_inicio">
+                <label for="inicio">Inicio:</label> <br>
+                <input 
+                type="number"
+                name="inicio"
+                id="inicio"
+                placeholder="Inicio da contagem">
+            </div>
+
+            <div id="area_final">
+                <label for="final">Final: </label> <br>
+                <input 
+                type="number"
+                name="final"
+                id="final"
+                placeholder="Fim da contagem">
+            </div>
+
+            <div id="area_passo">
+                <label for="passo">Passo:</label> <br>
+                <input 
+                type="number"
+                name="passo"
+                id="passo"
+                placeholder="Em quantos passos">
+            </div>
+
+            <div id="btn">
+                <button id="btn_enviar" onclick="iniciarPasso()">
+                    Verificar
+                </button>
+            </div>
+        </section>
+
+        <!-- Saida dos dados -->
+        <section id="saida">
+            <p id="res">Preencha os dados acima para ver o resultado !</p>
+        </section>
+    </main>
+    <footer>
+        <p id="copy">&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

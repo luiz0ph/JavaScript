@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(76, 139, 255);
+}
+
+h1, p#copy {
+    color: #fff;
+    text-align: center;
+    margin: 25px 0;
+}
+
+main {
+    background-color: #fff;
+    width: 85vw;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #00000070;
+}
+
+section {
+    margin: 20px 0;
+}
+
+
+div {
+    margin: 20px 0;
+}
+
+strong {
+    font-size: 18px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 90%;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #00000070;
+    box-shadow: 1px 1px 10px #00000030;
+}
+
+div#btn {
+    display: flex;
+    justify-content: center;
+}
+
+button#btn_enviar {
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #00000060;
+    box-shadow: 1px 1px 10px #00000030;
+}
+
+section#saida {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+}
+
+th, td {
+    border: 1px solid #000; /* Define a borda */
+    padding: 8px; /* Adiciona espaçamento dentro das células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+th {
+    background-color: #f2f2f2; /* Cor de fundo para cabeçalhos */
+}
