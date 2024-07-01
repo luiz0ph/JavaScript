@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    color: #000;
+}
+
+body {
+    background-color: rgb(0, 4, 255);
+    padding: 20px;
+}
+
+h1 {
+    font-size: 38px;
+    text-shadow: 1px 1px 10px #00000070;
+    text-align: center;
+    color: #fff
+}
+
+h2 {
+    font-size: 22px;
+}
+
+main {
+    width: 80vw;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px #00000070;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #00000070;
+}
+
+#btn_adcionar {
+    cursor: pointer;
+    height: 30px;
+    width: 20%;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #00000070;
+}
+
+.saida_dados {
+    margin: 30px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+}
+
+th, td {
+    border: 1px solid #000; /* Define a borda */
+    padding: 5px; /* Adiciona espaçamento dentro das células */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+th {
+    background-color: #ddd;
+}
+
+#btn_finalizar {
+    cursor: pointer;
+    padding: 10px;
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid #00000070;
+    box-shadow: 1px 1px 10px #00000030;
+}
+
+.copy {
+    color: #f4f4f4;
+    font-size: 20px;
+    text-align: center;
+}

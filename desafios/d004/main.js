@@ -16,12 +16,12 @@ function criarTabuada() {
 
     let numero = Number(num.value);
 
-    tabela.innerHTML =  `<tr> <th> Tabuada do ${numero} </th></tr>` // Resetar a tabela
-
     // Verificar se o campo foi preenchido
     if (num.value == '') {
         alert('Preencha o campo');
     } else {
+        tabela.innerHTML =  `<tr> <th> Tabuada do ${numero} </th></tr>` // Resetar a tabela
+            
         for (let i = 0; i <= 10; i++) {
             resultado = numero * i;
             tabela.innerHTML += `<tr>

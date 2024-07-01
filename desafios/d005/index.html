@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Analisador de Números</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <main>
+        <section class="entrada_dados">
+            <label for="num">Número de (1 a 100)</label>
+            <input 
+            type="number"
+            name="num"
+            id="num"
+            placeholder="Número de 1 a 100"
+            required>
+
+            <button id="btn_adcionar">
+                Adcionar
+            </button>
+        </section>
+
+        <section class="saida_dados">
+            <table id="tabela">
+                <tr>
+                    <th>Números adcionados: </th>
+                </tr>
+
+            </table>
+
+            <button id="btn_finalizar">
+                Finalizar
+            </button>
+        </section>
+
+        <section id="res">
+
+        </section>
+    </main>
+
+    <footer>
+        <p class="copy">&copy; Curso em Video</p>
+    </footer>
+
+    <!-- Arquivo Js -->
+    <script src="main.js"></script>
+</body>
+</html>
